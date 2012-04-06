@@ -26,8 +26,8 @@ public class App {
 		// value="insert into api_mt_BBB(mobiles,content,is_wap) values(?,?,0)"/>
 		// </construct> </invoke-factory> </service-point> </module>
 
-		String url = "jdbc:MySql://59.57.246.61:3306/mas?user=OATEST&password=123456789&dbcharset=gb2312&characterEncoding=gb2312";
-		Connection conn = DriverManager.getConnection(url, "OATEST", "123456789");
+		String url = "jdbc:MySql://59.57.246.61:3306/mas?&dbcharset=gb2312&characterEncoding=gb2312";
+		Connection conn = DriverManager.getConnection(url, "", "");
 
 		//Statement st = conn.createStatement();
 		PreparedStatement ps = conn.prepareStatement(
