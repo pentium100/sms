@@ -13,18 +13,6 @@ import java.sql.Statement;
 public class App {
 	public static void main(String[] args) throws SQLException {
 
-		// jdbc:MySQL://[host:port],[host:port].../[database][?参数名1][=参数值1][&参数名2][=参数值2]...
-
-		// <module id="sms" version="1.0.0"> <service-point id="smssender"
-		// interface="weaver.sms.SmsService"> <invoke-factory> <construct
-		// class="weaver.sms.JdbcSmsService"> <set property="type"
-		// value="Mysql"/> <set property="host" value="59.57.246.61"/> <set
-		// property="port" value="3306"/> <set property="dbname" value="mas
-		// <set property="dbcharset" value="GBK"/> <set property="username"
-		// value="OATEST"/> <set property="password" value="123456789"/> <set
-		// property="sql"
-		// value="insert into api_mt_BBB(mobiles,content,is_wap) values(?,?,0)"/>
-		// </construct> </invoke-factory> </service-point> </module>
 
 		String url = "jdbc:MySql://59.57.246.61:3306/mas?&dbcharset=gb2312&characterEncoding=gb2312";
 		Connection conn = DriverManager.getConnection(url, "", "");
