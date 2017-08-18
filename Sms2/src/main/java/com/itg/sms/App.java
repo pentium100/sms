@@ -14,8 +14,9 @@ public class App {
 	public static void main(String[] args) throws SQLException {
 
 
-		String url = "jdbc:MySql://59.57.246.61:3306/mas?&dbcharset=gb2312&characterEncoding=gb2312";
-		Connection conn = DriverManager.getConnection(url, "", "");
+		String url = "jdbc:MySql://172.16.10.201:3306/mas?&dbcharset=gb2312&characterEncoding=gb2312";
+		//String url = "jdbc:MySql://59.57.246.61:3306/mas?&dbcharset=gb2312&characterEncoding=gb2312";
+		Connection conn = DriverManager.getConnection(url, "OATEST", "123456789");
 
 		//Statement st = conn.createStatement();
 		PreparedStatement ps = conn.prepareStatement(
